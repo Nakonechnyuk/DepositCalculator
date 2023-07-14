@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:DepositeCalculator"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="500">
+        Title="Deposit Calculator" Height="450" Width="500">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
@@ -29,6 +29,7 @@
         <TextBox Grid.Row="1" Grid.Column="1" x:Name="txtTerm" Width="200" Margin="5"/>
 
         <TextBlock Grid.Row="2" Grid.Column="0"  Text="Interest Payment Method:"/>
+        <TextBlock Grid.Row="3" Grid.Column="0" Text="Deposit interest rate: 5%" Foreground="#FFE02424" FontWeight="Bold"/>
         <RadioButton Grid.Row="2" Grid.Column="1" 
                      IsChecked="True" 
                      Content="Capitalization" 

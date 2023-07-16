@@ -31,6 +31,10 @@ namespace DepositeCalculator
         {
             if (decimal.TryParse(txtAmount.Text, out decimal amount) && int.TryParse(txtTerm.Text, out int term))
             {
+                if (amount < 0 || term < 0)
+                {
+                    MessageBox.Show("Please enter valid values: the amount and term should be greater than 0.");
+                }
                 var interestRate = 0.05m; 
                 var expectedIncome = 0m;
 
